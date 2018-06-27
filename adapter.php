@@ -1,4 +1,8 @@
 <?php
+/*
+ * Date: 2018/06/27 17:00
+ * Name: Innocent Langa
+ */
 // Simple Interface for each Adapter we create
 interface paymentAdapter
 {
