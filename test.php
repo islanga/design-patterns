@@ -1,4 +1,5 @@
 <?php
+/*
 interface Paypal {
 	public function pay($amount);
 }
@@ -23,3 +24,13 @@ class NetAdapter implements Paypal
 
 $instance = new NetAdapter(new Net());
 $instance->pay(12.99);
+*/
+function mssql_real_escape_string_symbol($str)
+{
+    $escapeb = array ('`',"!","@","#","$","%","^","&","*","(",")","_","+","-","=","{","}","[","]","|",'\\',":",";",'"',"'","<",',',">",".","?","/",")");
+    return str_replace($escapeb, " ", $str);
+}
+
+$name = 'djfhjd\'djfdjhfjd\'';
+echo $name;
+echo mssql_real_escape_string_symbol($name);
